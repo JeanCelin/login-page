@@ -1,8 +1,56 @@
 @charset "UTF-8";
 
-:root{
+:root {
   --color0: #000000; /*black*/
   --color1: #49a09d; /*green*/
   --color2: #5f2c82; /*purle*/
   --color3: #ffffff; /*white*/
+}
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: var(--color2);
+  height: 100vh;
+  width: 100vw;
+}
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+section#login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  background-color: var(--color3);
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.478);
+}
+section#login > div#image {
+  display: block;
+  background: var(--color2) url(../image/building.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+}
+
+section#login > div#form {
+  display: block;
+  padding: 10px;
+
 }
