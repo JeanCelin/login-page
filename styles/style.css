@@ -1,11 +1,10 @@
 @charset "UTF-8";
 
-:root {
-  --color0: #000000; /*black*/
-  --color1: #49a09d; /*green*/
-  --color2: #5f2c82; /*purle*/
-  --color3: #ffffff; /*white*/
-}
+
+  /* color1: #49a09d; green
+  color2: #5f2c82; purle */
+
+
 
 * {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -18,7 +17,7 @@
 
 body,
 html {
-  background-color: var(--color2);
+  background-color: #5f2c82;
   height: 100vh;
   width: 100vw;
 }
@@ -34,15 +33,18 @@ section#login {
   transform: translate(-50%, -50%);
   overflow: hidden;
 
-  background-color: var(--color3);
+  background-color: white;
   width: 250px;
   height: 500px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.478);
+
+  transition: width .3s, height .3s;
+  transition-timing-function: ease;
 }
 section#login > div#image {
   display: block;
-  background: var(--color2) url(../image/building.jpg);
+  background: #5f2c82 url(../image/building.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
